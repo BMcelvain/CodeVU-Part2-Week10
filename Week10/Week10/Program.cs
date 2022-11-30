@@ -16,6 +16,11 @@ namespace Week10
             inventory.Add("backpack", backpackList);
             List<string> pocketList = new List<string>() { "seashell", "strange berry", "lint" };
             inventory.Add("pocket", pocketList);
+
+            backpackList.RemoveAt(1);
+            inventory["backpack"] = backpackList;
+
+            inventory["gold"] = 550;
         }
     }
 }
